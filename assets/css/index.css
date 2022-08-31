@@ -21,6 +21,14 @@
 .container header .baner img {
   width: 150px;
 }
+
+.container header .baner img:hover {
+  transform: rotate(360deg);
+  transition: all 1s ease-in-out 0s;
+}
+.wecare {
+  width: 100%;
+}
 .photowecare {
-  width: 100vw;
+  width: ;
 }
