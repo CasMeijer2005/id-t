@@ -1,0 +1,26 @@
+:root {
+  --clr-1: hotpink;
+  --clr-2: #000;
+}
+* {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--clr-1);
+}
+.container header .baner {
+  display: flex;
+  justify-content: center;
+  background-color: var(--clr-2);
+}
+
+.container header .baner img {
+  width: 150px;
+}
+.photowecare {
+  width: 100vw;
+}
