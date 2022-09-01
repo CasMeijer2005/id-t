@@ -12,7 +12,7 @@
 
 @font-face {
   font-family: myFirstFont;
-  src: url(/assets/fonts/LEMONMILK-Bold.otf);
+  src: url(../../assets/fonts/LEMONMILK-Bold.otf);
   font-weight: bold;
 }
 
@@ -22,7 +22,7 @@
   background-color: var(--clr-1);
 }
 header {
-  background-image: url("/assets/img/wecare.jpg");
+  background-image: url("../../assets/img/wecare.jpg");
   height: 700px;
   background-position: center;
   background-repeat: no-repeat;
@@ -129,6 +129,7 @@ video {
   font-weight: 800;
   font-style: italic;
   color: var(--clr-2);
+  font-size: 1.5rem;
 }
 .article2 {
   display: flex;
@@ -149,4 +150,49 @@ footer {
   font-style: italic;
   font-size: 1.5rem;
   list-style: none;
+}
+
+#DatForenklaR1_Loader_Container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0%;
+  left: 0%;
+  overflow: hidden;
+  z-index: 1001;
+  background-color: #000000;
+  color: rgb(1, 11, 9);
+  clip-path: inset(0 0 0% 0);
+  transition: clip-path 1.3s;
+}
+
+.DatForenklaR1_Loader_Out {
+  clip-path: inset(0 0 100% 0) !important;
+}
+
+#DatForenklaR1_Loader_Content {
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: opacity 600ms;
+}
+
+.DatForenklaR1_Loader_Out #DatForenklaR1_Loader_Content {
+  opacity: 0 !important;
+}
+
+#DatForenklaR1_Loader_Text {
+  margin-top: 24px;
+  display: block;
+  text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
 }
